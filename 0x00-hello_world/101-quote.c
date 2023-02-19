@@ -1,11 +1,12 @@
-#include <stdio.h>
 #include <unistd.h>
+#include <string.h>
 /**
- * main - C program that prints exactly and that piece of art is useful
- * Return 1 (Success)
+ * main - Print followed by new line to standard error
+ * Return 1 (Error)
  */
 int main(void)
 {
-	fput(and that piece of art is useful\" - Dora Korpar, 2015-10-19\n" stdout);
+	char *str = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	write(2, str, strlen(str));
 	return (1);
 }
