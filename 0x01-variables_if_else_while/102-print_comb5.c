@@ -4,7 +4,7 @@
 *
 * Description: A program that prints two two-digit numbers
 *
-* Return 0 Always (Success)
+* Return: 0 Always (Success)
 */
 int main(void)
 {
