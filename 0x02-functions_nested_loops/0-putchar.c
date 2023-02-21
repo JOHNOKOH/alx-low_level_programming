@@ -1,15 +1,14 @@
 #include "main.h"
-
 /**
  * main - print _putchar
- * is written by bwave
+ * written by johnny
  * Return: 0
  */
 
 int main(void)
 {
 _putchar('_');
-_putchar('P');
+_putchar('p');
 _putchar('u');
 _putchar('t');
 _putchar('c');
@@ -19,3 +18,5 @@ _putchar('r');
 _putchar('\n');
 return (0);
 }
+
+
