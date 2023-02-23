@@ -8,6 +8,6 @@ int main(void)
 	int i;
 
 	i = 0;
-	printf("%d is positive_or_negative\n", i);
+	printf("positive_or_negative(i)\n");
 	return (0);
 }
