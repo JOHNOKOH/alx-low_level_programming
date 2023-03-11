@@ -1,14 +1,22 @@
-#include"main.h"
-#include<stdio.h>
-#include<string.h>
+#include "main.h"
 /**
- *_memcpy- check the
- *@dest: the first
- *@src: the seconde
- *@n: the third value
- *Return: Always 0.
+ *_memcpy - a function that copies memory area
+ *@dest: memory where is stored
+ *@src: memory where is copied
+ *@n: number of bytes
+ *
+ *Return: copied memory with n byted changed
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-return (memcpy(dest, src, n));
+	int r = 0;
+	int i = n;
+
+
+	for (; r < i; r++)
+	{
+		dest[r] = src[r];
+		n--;
+	}
+	return (dest);
 }

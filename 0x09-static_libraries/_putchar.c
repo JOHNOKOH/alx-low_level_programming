@@ -1,10 +1,13 @@
-#include"main.h"
+#include <unistd.h>
+
 /**
- *reset_to_98- the function that change value
- *@n: the pointer of n
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
  *
- */
-void reset_to_98(int *n)
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+*/
+int _putchar(char c)
 {
-*n = 98;
+	return (write(1, &c, 1));
 }

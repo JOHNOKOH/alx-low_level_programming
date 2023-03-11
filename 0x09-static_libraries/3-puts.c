@@ -1,10 +1,15 @@
-#include"main.h"
+#include "main.h"
+
+void _puts(char *str)
+
+#include<stdio.h>
 /**
- *_puts- the function that change value
- *@s: the pointer of n
+ * main - Entry point
  *
+ * Return: Always 0 (Success)
  */
-void _puts(char *s)
+int main(void)
 {
-puts(s);
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
 }

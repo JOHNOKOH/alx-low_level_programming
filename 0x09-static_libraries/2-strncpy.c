@@ -1,13 +1,29 @@
-#include"main.h"
-#include<stdio.h>
-#include<string.h>
+#include "main.h"
 /**
- *_strlen- the function that change value
- *@str: the pointer of n
- *Return: the size of the value
+ * _strncpy - copy a string
+ * @dest: input value
+ * @src: input value
+ * @n: input value
+ *
+ * Return: dest
  */
-int _strlen(char *str)
+char *_strncpy(char *dest, char *src, int n)
 {
-int stringSize = strlen(str);
-return (stringSize);
+	int j;
+
+
+	j = 0;
+	while (j < n && src[j] != '\0')
+	{
+		dest[j] = src[j];
+		j++;
+	}
+	while (j < n)
+	{
+		dest[j] = '\0';
+		j++;
+	}
+
+
+	return (dest);
 }

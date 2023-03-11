@@ -1,20 +1,11 @@
-#include"main.h"
+#include "main.h"
+
 /**
- *_isdigit - that function function print  1 if lower 0 if not
- *
- *@c: 1 (lowercase) 0 (uppercase)
- *Return: 0
+ * _isdigit - checks for a digit (0 through 9)
+ * @c: int to be checked
+ * Return: 1 if c is a digit, 0 otherwise
  */
 int _isdigit(int c)
 {
-if (isupper(c))
-{
-putchar(0 + '0');
-return (0);
-}
-else
-{
-putchar(1 + '0');
-return (1);
-}
+	return (c >= '0' && c <= '9');
 }

@@ -1,13 +1,20 @@
-#include"main.h"
-#include<stdio.h>
-#include<string.h>
+#include "main.h"
 /**
- *_strlen- the function that change value
- *@str: the pointer of n
- *Return: the size of the value
+ * _strlen - returns the length of a string
+ * @s: string
+ * Return: length
  */
-int _strlen(char *str)
+int _strlen(char *s)
 {
-int stringSize = strlen(str);
-return (stringSize);
+	int longi = 0;
+
+
+	while (*s != '\0')
+	{
+		longi++;
+		s++;
+	}
+
+
+	return (longi);
 }

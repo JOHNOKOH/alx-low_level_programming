@@ -1,20 +1,14 @@
-#include"main.h"
+#include "main.h"
 /**
- *_isupper - that function function print  1 if lower 0 if not
+ * _isupper - uppercase letters
+ * @c: char to check
  *
- *@c: 1 (lowercase) 0 (uppercase)
- *Return: 0
+ * Return: 0 or 1
  */
 int _isupper(int c)
 {
-if (isupper(c))
-{
-putchar(0 + '0');
-return (0);
-}
-else
-{
-putchar(1 + '0');
-return (1);
-}
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+
+		return (0);
 }

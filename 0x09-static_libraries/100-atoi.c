@@ -1,13 +1,28 @@
-#include"main.h"
-#include<stdio.h>
-#include<string.h>
-#include<ctype.h>
+#include "main.h"
 /**
- *_atoi- the function that change value
- *@s: the pointer of n
- *Return: 0
+ * _atoi - convert a string into an integer.
+ *
+ * @s: the string to use.
+ *
+ * Return: integer.
  */
 int _atoi(char *s)
 {
-return (atoi(s));
+	int sign = 1, i = 0;
+	unsigned int res = 0;
+
+
+	while (!(s[i] <= '9' && s[i] >= '0') && s[i] != '\0')
+	{
+		if (s[i] == '-')
+			sign *= -1;
+		i++;
+	}
+	while (s[i] <= '9' && (s[i] >= '0' && s[i] != '\0'))
+	{
+		res = (res * 10) + (s[i] - '0');
+		i++;
+	}
+	res *= sign;
+	return (res);
 }

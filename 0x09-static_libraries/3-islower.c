@@ -1,21 +1,10 @@
-#include"main.h"
+#include "main.h"
 /**
- *_islower - that function function print  1 if lower 0 if not
- *
- *@n: 1 (lowercase) 0 (uppercase)
- *Return: 0
+ * _islower - checks for lowercase character
+ * @c: the character to check
+ * Return: 1 if c is lowercase, 0 otherwise
  */
-
-int _islower(int n)
+int _islower(int c)
 {
-if (isupper(n))
-{
-putchar(0 + '0');
-return (0);
-}
-else
-{
-putchar(1 + '0');
-return (1);
-}
+	return (c >= 'a' && c <= 'z');
 }
