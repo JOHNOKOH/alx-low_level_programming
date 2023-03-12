@@ -1,11 +1,31 @@
-#include"main.h"
+#include "main.h"
 /**
- *_strcat- check the
- *@dest: the first
- *@src: the seconde
- *Return: Always 0.
+ * _strcat - concatenates two strings
+ * @dest: input value
+ * @src: input value
+ *
+ * Return: Pointer dest
  */
 char *_strcat(char *dest, char *src)
 {
-return (strcat(dest, src));
+	int i;
+	int j;
+
+
+	i = 0;
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+	j = 0;
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+
+
+	dest[i] = '\0';
+	return (dest);
 }

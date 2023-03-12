@@ -1,11 +1,16 @@
-#include"main.h"
+#include "main.h"
 /**
- *_strcat- check the
- *@dest: the first
- *@src: the seconde
- *Return: Always 0.
- */
-char *_strcat(char *dest, char *src)
+ * _puts - prints a string
+ * @str: character parameter
+ *
+ * Return: void
+*/
+void _puts(char *str)
 {
-return (strcat(dest, src));
+	while (*str != '\0')
+	{
+		_putchar(*str);
+		str++;
+	}
+	_putchar('\n');
 }
