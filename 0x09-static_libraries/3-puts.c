@@ -1,10 +1,11 @@
 #include"main.h"
 /**
- *_puts- the function that change value
- *@s: the pointer of n
- *
+ *_strcat- check the
+ *@dest: the first
+ *@src: the seconde
+ *Return: Always 0.
  */
-void _puts(char *s)
+char *_strcat(char *dest, char *src)
 {
-puts(s);
+return (strcat(dest, src));
 }
